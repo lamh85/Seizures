@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+var refreshColor = function() {
+  var colorString;
+  colorString = "rgb("; 
+  colorString += Math.round(Math.random()*255) + ",";
+  colorString += Math.round(Math.random()*255) + ",";
+  colorString += Math.round(Math.random()*255) + ")";
+
+  $('body').css('background-color',colorString);
+}
+
+setInterval(refreshColor,100);
+
+</script>
+
+</html>
